@@ -33,6 +33,7 @@ wrong_list=[]
 
 while True:
 
+    #loose condition and break
     if attempts ==0:
         print (f"sorry the word was {word} better luck next time!")
         break
@@ -50,6 +51,7 @@ while True:
             print("_", end='')
     print("")
 
+    #win condition and break
     if correct_count == len(word):
         print ("YOU WON!")
         break
