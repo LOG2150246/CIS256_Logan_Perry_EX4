@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4000f18c-d4e6-4fd5-9c7a-0d5fe084a944" name="Changes" comment="turned word_picker into a function&#10;lowered attempts to 3 for quick testing&#10;added if __name=main... to main loop&#10;got test_predefined_list working">
+    <list default="true" id="4000f18c-d4e6-4fd5-9c7a-0d5fe084a944" name="Changes" comment="created process_guess func moved most logic inside it">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/guess_the_word.py" beforeDir="false" afterPath="$PROJECT_DIR$/guess_the_word.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_guess_the_word.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_guess_the_word.py" afterDir="false" />
@@ -149,7 +149,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762197336726</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="created process_guess func moved most logic inside it">
+      <option name="closed" value="true" />
+      <created>1762198498324</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1762198498324</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -162,6 +170,7 @@
     <MESSAGE value="added the loose condition: First Full Working version" />
     <MESSAGE value="fixed description of guess_the_word&#10;Created framework for test_guess_the_word" />
     <MESSAGE value="turned word_picker into a function&#10;lowered attempts to 3 for quick testing&#10;added if __name=main... to main loop&#10;got test_predefined_list working" />
-    <option name="LAST_COMMIT_MESSAGE" value="turned word_picker into a function&#10;lowered attempts to 3 for quick testing&#10;added if __name=main... to main loop&#10;got test_predefined_list working" />
+    <MESSAGE value="created process_guess func moved most logic inside it" />
+    <option name="LAST_COMMIT_MESSAGE" value="created process_guess func moved most logic inside it" />
   </component>
 </project>
