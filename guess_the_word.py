@@ -29,25 +29,42 @@ correct_list=[]
 wrong_list=[]
 
 while True:
-    print(f"you have {attempts} attempts to guess the hidden word")
-    print(f"so far you know _____")#FIXME
+
+    #pritns how many attempts left
+    print(f"\nyou have {attempts} attempts to guess the hidden word")
+
+    #prints known letters
+    for letter in word:
+        if letter in correct_list:
+            print (f"{letter}", end='')
+        else:
+            print("_", end='')
+    print("")
+
+    #gets input
     guess = input("What letter would you like to guess\n:").lower().strip()
 
+    #if user put more than 1 letter in remind them only 1 letter
     if len(guess) != 1:
-        print ("sorry guess must be 1 letter")
-    if guess in correct_list or guess in wrong_list:
-        print (f"sorry you already guessed {guess}")
+        print ("Sorry guess must be 1 letter")
 
+    #if guess was already guessed remind them
+    if guess in correct_list or guess in wrong_list:
+        print (f"Sorry you already guessed {guess}")
+
+    #if guess in word...
     elif guess in word:
         correct_list.append(guess)
 
-        print(f"{guess} is in word")
+        #print(f"{guess} is in the word")
 
+        #win condition Does NOT work due to 2 letters EX aPPle FIXME
+        if len(correct_list)==len(word):
+            print("you won")
+            break
+
+    #else (guess is not in word)...
     else:
         print(f"{guess} is not in the word")
         wrong_list.append(guess)
         attempts-=1
-
-#Continue until the user guesses the word or runs out of attempts.
-
-#Display a congratulatory message when the word is guessed.
