@@ -27,6 +27,7 @@ def word_picker(input_list):
     picked_word = (random.choice(input_list))
     return picked_word
 
+#takes a guess and the correct word finds if it is in the word and returns accordingly
 def process_guess(player_guess,correct_word,list_of_correct,list_of_wrong,num_attempts):
     # if user put more than 1 letter in remind them only 1 letter
     if len(player_guess) != 1:
@@ -55,7 +56,7 @@ if __name__ == "__main__":
     word=word_picker(words)
 
     #for quick testing prints the word
-    print(word)
+    #print(word)
 
     #ini lists
     correct_list=[]
