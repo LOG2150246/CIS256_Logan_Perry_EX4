@@ -26,6 +26,30 @@ attempts =3
 def word_picker(input_list):
     picked_word = (random.choice(input_list))
     return picked_word
+
+def process_guess(player_guess,correct_word,list_of_correct,list_of_wrong,num_attempts):
+    # if user put more than 1 letter in remind them only 1 letter
+    if len(player_guess) != 1:
+        print("Sorry guess must be 1 letter")
+
+
+    # if guess was already guessed remind them
+    elif player_guess in list_of_correct or player_guess in list_of_wrong:
+        print(f"Sorry you already guessed {player_guess}")
+
+    # if guess in word...
+    elif player_guess in correct_word:
+        list_of_correct.append(player_guess)
+
+    # else (guess is not in word)...
+    else:
+        print(f"{player_guess} is not in the word")
+        list_of_wrong.append(guess)
+        num_attempts -= 1
+        return num_attempts
+
+
+
 if __name__ == "__main__":
     word=word_picker(words)
 
@@ -64,20 +88,4 @@ if __name__ == "__main__":
         #gets input
         guess = input("What letter would you like to guess\n:").lower().strip()
 
-        #if user put more than 1 letter in remind them only 1 letter
-        if len(guess) != 1:
-            print ("Sorry guess must be 1 letter")
-
-        #if guess was already guessed remind them
-        elif guess in correct_list or guess in wrong_list:
-            print (f"Sorry you already guessed {guess}")
-
-        #if guess in word...
-        elif guess in word:
-            correct_list.append(guess)
-
-        #else (guess is not in word)...
-        else:
-            print(f"{guess} is not in the word")
-            wrong_list.append(guess)
-            attempts-=1
+        attempts=process_guess(guess,word,correct_list,wrong_list,attempts)

@@ -14,7 +14,7 @@ def test_predefined_list():
     assert word in words
 
 #Guesses are processed correctly (correct vs. incorrect)
-#def test_guesses_process():
-#    print("did stuff")
+def test_guesses_process():
+    print("did stuff")
 
-#test_predefined_list(words)
+
