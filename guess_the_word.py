@@ -20,7 +20,8 @@ words=[
 "food"
 ]
 
-attempts =3
+#number of attempts for the game
+attempts =10
 
 #Select a random word from a predefined list
 def word_picker(input_list):
@@ -38,6 +39,7 @@ def process_guess(player_guess,correct_word,list_of_correct,list_of_wrong,num_at
     elif player_guess in list_of_correct or player_guess in list_of_wrong:
         print(f"Sorry you already guessed {player_guess}")
         return num_attempts,"repeat"
+
     # if guess in word...
     elif player_guess in correct_word:
         list_of_correct.append(player_guess)
@@ -58,7 +60,7 @@ if __name__ == "__main__":
     #for quick testing prints the word
     #print(word)
 
-    #ini lists
+    #initialize lists to track correct and wrong guesses
     correct_list=[]
     wrong_list=[]
 
@@ -85,8 +87,10 @@ if __name__ == "__main__":
 
         #prints how many attempts left
         print(f"\nyou have {attempts} attempts to guess the hidden word")
-        #gets input
+
+        #gets players guess
         guess = input("What letter would you like to guess\n:").lower().strip()
         print("")
 
+        #process the player gess and update num of attempts
         attempts,status=process_guess(guess,word,correct_list,wrong_list,attempts)
