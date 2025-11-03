@@ -68,9 +68,6 @@ if __name__ == "__main__":
             print (f"sorry the word was {word} better luck next time!")
             break
 
-        #prints how many attempts left
-        print(f"\nyou have {attempts} attempts to guess the hidden word")
-
         #prints known letters
         correct_count = 0
         for letter in word:
@@ -79,14 +76,16 @@ if __name__ == "__main__":
                 correct_count+=1
             else:
                 print("_", end='')
-        print("")
 
         #win condition and break
         if correct_count == len(word):
-            print ("YOU WON!")
+            print (f"\nYes the word was {word} YOU WIN!")
             break
 
+        #prints how many attempts left
+        print(f"\nyou have {attempts} attempts to guess the hidden word")
         #gets input
         guess = input("What letter would you like to guess\n:").lower().strip()
+        print("")
 
         attempts,status=process_guess(guess,word,correct_list,wrong_list,attempts)
