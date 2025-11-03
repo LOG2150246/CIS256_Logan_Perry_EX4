@@ -29,17 +29,24 @@ correct_list=[]
 wrong_list=[]
 
 while True:
-    print(f"{attempts} attempts left")
-    guess = input("What letter would you like to guess\n:")
+    print(f"you have {attempts} attempts to guess the hidden word")
+    print(f"so far you know _____")#FIXME
+    guess = input("What letter would you like to guess\n:").lower().strip()
 
-    if guess in word:
-        correct_list=[].append(guess)
+    if len(guess) != 1:
+        print ("sorry guess must be 1 letter")
+    if guess in correct_list or guess in wrong_list:
+        print (f"sorry you already guessed {guess}")
+
+    elif guess in word:
+        correct_list.append(guess)
+
         print(f"{guess} is in word")
 
     else:
         print(f"{guess} is not in the word")
-        wrong_list = [].append(guess)
-    attempts-=1
+        wrong_list.append(guess)
+        attempts-=1
 
 #Continue until the user guesses the word or runs out of attempts.
 

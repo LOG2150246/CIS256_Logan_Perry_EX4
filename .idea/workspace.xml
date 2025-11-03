@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4000f18c-d4e6-4fd5-9c7a-0d5fe084a944" name="Changes" comment="Testing 1">
-      <change afterPath="$PROJECT_DIR$/guess_the_word.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="4000f18c-d4e6-4fd5-9c7a-0d5fe084a944" name="Changes" comment="main loop framework works">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess_the_word.py" beforeDir="false" afterPath="$PROJECT_DIR$/guess_the_word.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,11 +75,29 @@
       <option name="project" value="LOCAL" />
       <updated>1762144784148</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Framework for guess the word">
+      <option name="closed" value="true" />
+      <created>1762145872411</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1762145872411</updated>
+    </task>
+    <task id="LOCAL-00003" summary="main loop framework works">
+      <option name="closed" value="true" />
+      <created>1762146401767</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1762146401767</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Testing 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Testing 1" />
+    <MESSAGE value="Framework for guess the word" />
+    <MESSAGE value="main loop framework works" />
+    <option name="LAST_COMMIT_MESSAGE" value="main loop framework works" />
   </component>
 </project>
