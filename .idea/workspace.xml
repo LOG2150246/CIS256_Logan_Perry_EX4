@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4000f18c-d4e6-4fd5-9c7a-0d5fe084a944" name="Changes" comment="main loop framework works">
+    <list default="true" id="4000f18c-d4e6-4fd5-9c7a-0d5fe084a944" name="Changes" comment="fixed description of guess_the_word&#10;Created framework for test_guess_the_word">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/guess_the_word.py" beforeDir="false" afterPath="$PROJECT_DIR$/guess_the_word.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_guess_the_word.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_guess_the_word.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +47,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python tests.Python tests in test_guess_the_word.py.executor": "Run",
     "Python.guess_the_word.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main"
@@ -91,13 +93,66 @@
       <option name="project" value="LOCAL" />
       <updated>1762146401767</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="improvments to main loop framework">
+      <option name="closed" value="true" />
+      <created>1762147227324</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1762147227324</updated>
+    </task>
+    <task id="LOCAL-00005" summary="main loop working, needs win condition and polishing">
+      <option name="closed" value="true" />
+      <created>1762149103764</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1762149103764</updated>
+    </task>
+    <task id="LOCAL-00006" summary="added win condition fixed some bugs added more words, First Working version">
+      <option name="closed" value="true" />
+      <created>1762149602780</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1762149602780</updated>
+    </task>
+    <task id="LOCAL-00007" summary="added win condition fixed some bugs added more words, First Working version">
+      <option name="closed" value="true" />
+      <created>1762149931306</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1762149931306</updated>
+    </task>
+    <task id="LOCAL-00008" summary="added the loose condition: First Full Working version">
+      <option name="closed" value="true" />
+      <created>1762150015828</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1762150015828</updated>
+    </task>
+    <task id="LOCAL-00009" summary="fixed description of guess_the_word&#10;Created framework for test_guess_the_word">
+      <option name="closed" value="true" />
+      <created>1762195878513</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1762195878513</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Testing 1" />
     <MESSAGE value="Framework for guess the word" />
     <MESSAGE value="main loop framework works" />
-    <option name="LAST_COMMIT_MESSAGE" value="main loop framework works" />
+    <MESSAGE value="improvments to main loop framework" />
+    <MESSAGE value="main loop working, needs win condition and polishing" />
+    <MESSAGE value="added win condition fixed some bugs added more words, First Working version" />
+    <MESSAGE value="added the loose condition: First Full Working version" />
+    <MESSAGE value="fixed description of guess_the_word&#10;Created framework for test_guess_the_word" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed description of guess_the_word&#10;Created framework for test_guess_the_word" />
   </component>
 </project>
