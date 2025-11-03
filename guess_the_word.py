@@ -33,6 +33,10 @@ wrong_list=[]
 
 while True:
 
+    if attempts ==0:
+        print (f"sorry the word was {word} better luck next time!")
+        break
+
     #prints how many attempts left
     print(f"\nyou have {attempts} attempts to guess the hidden word")
 
