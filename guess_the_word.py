@@ -1,7 +1,7 @@
 """
 Logan Perry
 CIS256 Fall 2024
-EX 4_1
+EX 4_2
 Create a word-guessing game where the user guesses a word letter by letter.
 You will use Git for version control, pytest for testing, and share your repository on GitHub.
 """
